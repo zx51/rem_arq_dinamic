@@ -63,10 +63,10 @@ MODELO_CONFIG="\
 #
 # Exemplos de uso:
 #
-# # == Oracle BASE ==
+# # == Arquivo de backup ==
 # [backup*tar.z]
 # tipo_backup=arquivo
-# diretorio=/db/backup/backup_old
+# diretorio=/backup
 # limite_disco=90
 # qtd_minima_backups=15
 # qtd_maxima_backups=200"
@@ -85,7 +85,7 @@ PRINTLOG=2
 #
 # Local e nome dos arquivos de log gerados pela retenção caso esteja configurado a variavel PRINTLOG e o número máximo de linhas do arquivo de log.
 # Ex: DIR_LOG="/db/backup/checklist" ARQ_LOG="rem_arq_dinamic_09022024.log" LIMITE_LINHA_LOG=100000000
-DIR_LOG="/db/backup/checklist"
+DIR_LOG="/logs"
 ARQ_LOG="${NOME_SCRIPT%.*}.log"
 LIMITE_LINHA_LOG=1000000
 #
